@@ -147,7 +147,7 @@ var massaDePizza = ["farinha","agua","oleo","ovo","sal"];
 
 //massaDePizza.pop(); REMOVE O ULTIMO ITEM DO ARRAY.
 //massaDePizza.push("queijo"); ADICIONA NO FINAL.
-//massaDePizza.unshift("molho"); ADICIONA NO COMEÇO.
+//massaDePizza.unshift("molho"); //ADICIONA NO COMEÇO.
 //console.log(massaDePizza.slice(0,2)); //POSSO PEGAR O ITEM QUE EU QUISER, EX: ['farinha', 'agua'].
 //massaDePizza.shift(); REMOVE O PRIMEIRO ITEM DO ARRAY.
 //console.log(massaDePizza);
@@ -203,14 +203,23 @@ console.log(cursos[1].categorias[1]);
 //key:value
 
 var aluno = {
-    'nome': 'Edmilson',
+    'nome': 'Ed',
     'sobrenome': 'Junior',
-    'idade': '23'
+    'dataNasc': 2001,
     'nome_completo': function(){
-        
+        var n_completo = this.nome + " " + this.sobrenome;
+        return n_completo;
+    },
+    'ver_idade': function(){
+        var anoAtual = 2025 - this.dataNasc;
+        return anoAtual;
     }
 }
 
+console.log(aluno.nome_completo());
+console.log(aluno.ver_idade());
+
+//console.log(n_completo);
 
 /* var nome_completo = aluno.nome + aluno.sobrenome;
 console.log(nome_completo); */
