@@ -109,6 +109,117 @@ function soma_variaveis(num1,num2){
 soma_variaveis(10,10);
 
 
+//EXERCICIO MMC
+
+
+/* function calc_imc(peso,altura) {
+    var imc = peso / (altura * altura);
+    return imc;
+}
+    var meu_peso = document.getElementById("peso").innerHTML;
+    var minha_altura = document.getElementById("altura").innerHTML;
+
+    var meu_imc = calc_imc(meu_peso,minha_altura);
+
+document.getElementById("imc").innerHTML = meu_imc.toFixed(1);    */
+
+
+//Aula 12 Array
+
+var alunos = ["Edmilson", "Victor","Lucas"];
+var num_primos = [ 2, 3, 5, 7, 11, 13 ];
+
+console.log(alunos[1]);
+console.log(num_primos[3]);
+
+var grupos = [ 
+    [ "Edmilson" , "Duda" ],
+    [ "Victor" , "Quintela", "Leticia", "Lucas" ],
+    [ "Marcus" , "Cabelin", "Well" ]
+];
+
+console.log("Quantidade de items: " + grupos.length);
+console.log(grupos[0][0]);
+console.log(grupos[1]);
+console.log(grupos[2]);
+
+var massaDePizza = ["farinha","agua","oleo","ovo","sal"];
+
+//massaDePizza.pop(); REMOVE O ULTIMO ITEM DO ARRAY.
+//massaDePizza.push("queijo"); ADICIONA NO FINAL.
+//massaDePizza.unshift("molho"); ADICIONA NO COMEÇO.
+//console.log(massaDePizza.slice(0,2)); //POSSO PEGAR O ITEM QUE EU QUISER, EX: ['farinha', 'agua'].
+//massaDePizza.shift(); REMOVE O PRIMEIRO ITEM DO ARRAY.
+//console.log(massaDePizza);
+
+
+//Aula 13 Objetos
+
+
+var funcionario = {
+    'nome': 'Pedro Souza Gomes',
+    'ano_nasc': 1972,
+    'cpf': '111.111.111.11',
+    'cargo': 'Analista de Sistemas'
+};
+     
+console.log(funcionario.nome);
+console.log(funcionario['ano_nasc']);
+// AS DUAS FORMAS FUNCIONA
+
+var cursos = [
+    {
+        'titulo': 'Aprenda programação em Python 3 com facilidade do zero',
+        'avaliacoes': 680,
+        'alunos': 2300,
+        'categorias': ['programacao', 'tecnologia']
+    },
+
+    {
+        'titulo': 'Aprenda PHP e faça sites dinâmicos',
+        'avaliacoes': 180,
+        'alunos': 350,
+        'categorias': ['desenvolvimento web', 'programacao']
+    },
+
+    {
+        'titulo': 'Excel do Zero ao Avançado',
+        'avaliacoes': 420,
+        'alunos': 1800,
+        'categorias': ['produtividade', 'gestão']
+    }
+    
+];
+
+//Consegui selecionar e alterar.
+//console.log(cursos[0].categorias[1]);
+//console.log(cursos[1].categorias[0]);
+//console.log(cursos[0].categorias[0]);
+cursos[1].categorias[1]= "codeIgniter 3";
+console.log(cursos[1].categorias[1]);
+
+
+//Aula 14 Métodos de Objetos
+//key:value
+
+var aluno = {
+    'nome': 'Edmilson',
+    'sobrenome': 'Junior',
+    'idade': '23'
+    'nome_completo': function(){
+        
+    }
+}
+
+
+/* var nome_completo = aluno.nome + aluno.sobrenome;
+console.log(nome_completo); */
+
+
+
+
+
+
 
 
 
