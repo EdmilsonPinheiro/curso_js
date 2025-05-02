@@ -1,4 +1,4 @@
-//Aula 3 Variaveis
+/* //Aula 3 Variaveis
 
 var latitude = 10.45128
 var longitude = -8.14527
@@ -94,7 +94,7 @@ document.getElementById("caixa_amarela").innerHTML = conteudo_caixa;
  */
 //Aula 11 Funções
 
-function soma_numeros(){
+/* function soma_numeros(){
     var x = 10;
     var y = 5;
     var soma = x + y;
@@ -106,7 +106,7 @@ function soma_variaveis(num1,num2){
     var soma = num1 + num2;
     console.log(soma);
 }
-soma_variaveis(10,10);
+soma_variaveis(10,10); */
 
 
 //EXERCICIO MMC
@@ -125,7 +125,7 @@ document.getElementById("imc").innerHTML = meu_imc.toFixed(1);    */
 
 
 //Aula 12 Array
-
+/* 
 var alunos = ["Edmilson", "Victor","Lucas"];
 var num_primos = [ 2, 3, 5, 7, 11, 13 ];
 
@@ -144,7 +144,7 @@ console.log(grupos[1]);
 console.log(grupos[2]);
 
 var massaDePizza = ["farinha","agua","oleo","ovo","sal"];
-
+ */
 //massaDePizza.pop(); REMOVE O ULTIMO ITEM DO ARRAY.
 //massaDePizza.push("queijo"); ADICIONA NO FINAL.
 //massaDePizza.unshift("molho"); //ADICIONA NO COMEÇO.
@@ -155,7 +155,7 @@ var massaDePizza = ["farinha","agua","oleo","ovo","sal"];
 
 //Aula 13 Objetos
 
-
+/* 
 var funcionario = {
     'nome': 'Pedro Souza Gomes',
     'ano_nasc': 1972,
@@ -189,20 +189,20 @@ var cursos = [
         'categorias': ['produtividade', 'gestão']
     }
     
-];
+]; */
 
 //Consegui selecionar e alterar.
 //console.log(cursos[0].categorias[1]);
 //console.log(cursos[1].categorias[0]);
 //console.log(cursos[0].categorias[0]);
-cursos[1].categorias[1]= "codeIgniter 3";
-console.log(cursos[1].categorias[1]);
+/* cursos[1].categorias[1]= "codeIgniter 3";
+console.log(cursos[1].categorias[1]); */
 
 
 //Aula 14 Métodos de Objetos
 //key:value
 
-var aluno = {
+/* var aluno = {
     'nome': 'Ed',
     'sobrenome': 'Junior',
     'dataNasc': 2001,
@@ -218,14 +218,33 @@ var aluno = {
 
 console.log(aluno.nome_completo());
 console.log(aluno.ver_idade());
+ */
 
+                   //objeto // metodo do objeto      // propriedade do objeto
+//console.log(typeof document.getElementById("tudo_obj").innerHTML);
 //console.log(n_completo);
 
-/* var nome_completo = aluno.nome + aluno.sobrenome;
-console.log(nome_completo); */
 
+//Aula 16 Eventos
 
+/* document.getElementById("click-me").onclick = function(){
+    alert("Voce clicou no botão");
+};
+document.getElementById("hover-me").onmouseover = function(){
+    alert("Voce passou com o cursor no botao");
+};
+document.getElementById("leave-me").onmouseout = function(){
+    alert("Voce saiu com o cursor no botao");
+}; */
 
+/* document.onkeydown = function(){
+    alert('Voce apertou alguma tecla');
+}; */
+
+/* document.onkeydown = function(){
+    alert('Voce apertou a tecla: ' + event.keyCode);
+};
+ 
 
 
 
@@ -248,4 +267,4 @@ $("#mudar_imagem").click(function(){
     $("#imagem_js").attr("src", "https://cdn.tutsplus.com/net/uploads/2013/12/managing-async-nodejs-retina-preview.png");
     $("#mudar_imagem").hide();
 });
- */
+ */ 
