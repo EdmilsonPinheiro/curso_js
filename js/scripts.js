@@ -227,26 +227,136 @@ console.log(aluno.ver_idade());
 
 //Aula 16 Eventos
 
-/* document.getElementById("click-me").onclick = function(){
-    alert("Voce clicou no botão");
+/* document.getElementById("click-me").onclick = function (){
+    alert("Clicou aqui");
 };
-document.getElementById("hover-me").onmouseover = function(){
-    alert("Voce passou com o cursor no botao");
+document.getElementById("hover-me").onmouseover = function (){
+    alert("Passou aqui");
 };
-document.getElementById("leave-me").onmouseout = function(){
-    alert("Voce saiu com o cursor no botao");
+document.getElementById("leave-me").onmouseleave = function (){
+    alert("Saiu o cursor")
+};
+document.getElementById("teste-me").onmousedown = function (){
+    alert("TESTE");
+};
+document.onkeydown = function (){
+    alert("VocÊ apertou a tecla: " + event.keyCode);
 }; */
 
-/* document.onkeydown = function(){
-    alert('Voce apertou alguma tecla');
-}; */
+//Aula 17 Manipulação CSS
 
-/* document.onkeydown = function(){
-    alert('Voce apertou a tecla: ' + event.keyCode);
-};
+/* document.getElementById("botao_cor").onclick = function (){
+    document.getElementById("botao_cor").style['background-color'] = 'black';
+    document.getElementById("botao_cor").style.transform = "translateX(100px)";
+};*/
+
+//Aula 18 Outros metodos getElements
+
+/* var exemplo = document.getElementsByClassName("exemplo");
+
+exemplo[0].innerHTML = "Edmilson";
+
+console.log(exemplo); */
+/* 
+var exemplo = document.getElementsByTagName("p");
+
+exemplo[4].innerHTML = "Edmilson";
+exemplo[5].innerHTML = "Junior";
+
+console.log(exemplo);
+ */
+
+//Aula 19 Loops for e for/in
+
+/* var alunos = ['Edmilson', 'Quintela', 'Victor', 'Duda', 'Ari']
+
+for(var a = 0; a < alunos.length; a++){
+    console.log(alunos[a]);
+}
+
+var carro = {
+    'Ano': 2008,
+    'Modelo': 'Siena',
+    'Cilindradas': '1.0',
+    'Combustível': 'Flex'
+
+}
+
+for(var prop in carro ){
+    console.log(prop + ': ' + carro[prop] );
+} */
+
+/* var elementos = document.getElementsByClassName("exemplo");
+
+for(var c = 0; c < elementos.length; c++){
+    elementos[c].style.color = "orange";
+    elementos[c].style['font-weight'] = "bold";
+} */
+
+//Aula 20 while e Do while
+
+/* var elementos = document.getElementsByClassName("exemplo");
+
+var teste = 0;
+
+while (teste < 10){
+    console.log(teste);
+    teste++;
+} */
+
+/* var teste2 = 10;
+
+do {
+    console.log(teste2);
+    teste2++;
+}while(teste2 > 5);
+ */
+
+//Aula 20 condicionais if, else if e else
+
+/* var nota = 10;
+var falta = 8;
+
+if (nota < 6 && falta > 4){
+    console.log("Reprovado");
+}else{
+    console.log("Aprovado");
+}
+
+var idade = 19;
+
+if(idade < 18){
+    console.log("Menor de idade");
+} else if(idade == 18){
+    console.log("Tem 18 anos");
+}
+else{
+    console.log("Maior de idade")
+}
+
+var nome = 'Edmilson';
+if(nome){
+    console.log(nome);
+} 
+*/
+
+
+//Aula 21 Aninhamentos de loops
+/* 
+var socio = true;
+var idade = 25;
+
+if (socio || idade >= 65){
+    console.log("Ingresso de graça");
+} else{
+    if(socio == false && idade < 18){
+        console.log("Ingresso r$ 6,00.");
+    }
+    else{
+        console.log("Ingresso r$ 12,00.");
+    }
+} */
  
-
-
 
 
 
