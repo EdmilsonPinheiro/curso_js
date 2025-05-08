@@ -387,8 +387,59 @@ if (socio || idade >= 65){
     } */
 
 
+//AULA 25 LOCAL STORAGE
+/* 
+document.getElementById("enviar-nome").onclick = function (){
 
+    // Guarda o nome do usuario digitado em local storage
+    var nome_usuario = document.getElementById("nome-usuario").value;
+    localStorage.setItem("nome_usuario", nome_usuario);
 
+    // esconder o formulário
+    document.getElementById("name-field").style.display = "none";
+
+    // atualizar e mostrar mensagem de boas vindas
+    document.getElementById("welcome-text").innerHTML = "Olá " + localStorage.nome_usuario + ", tudo bem?";
+    document.getElementById("not-me").innerHTML = "Não é " + localStorage.nome_usuario + "?";
+    document.getElementById("welcome-area").style.display = "initial";
+};
+
+if(localStorage.nome_usuario){
+
+    // Guarda o nome do usuario digitado em local storage
+    var nome_usuario = document.getElementById("nome-usuario").value;
+    localStorage.setItem("nome_usuario", nome_usuario);
+
+       // atualizar e mostrar mensagem de boas vindas
+       document.getElementById("welcome-text").innerHTML = "Olá " + localStorage.nome_usuario + ", tudo bem?";
+       document.getElementById("not-me").innerHTML = "Não é " + localStorage.nome_usuario + "?";
+       document.getElementById("welcome-area").style.display = "initial";
+
+}
+
+document.getElementById("not-me").onclick = function(){
+
+    //remover chave nome do local storage
+    localStorage.removeItem("nome_usuario");
+
+    //esconder mensagem de boas vindas
+    document.getElementById("welcome-area").style.display = "none";
+
+    //mostra o formulário
+    document.getElementById("name-field").style.display = "initial";
+}
+ */
+
+//Aula 26 Data e Hora
+
+/* var data_hoje = new Date();
+console.log(data_hoje);
+ */
+//posso incluir os métodos para ter a data em diversos formatos
+//getDate()	Retorna o dia do mês (de 1 a 31)
+//getDay()	    Retorna o dia da semana (de 0 - Domingo a 6 - Sábado)
+//getFullYear()	Retorna o ano
+//getHours()	Retorna a hora
 
 
 
