@@ -386,6 +386,7 @@ if (socio || idade >= 65){
         }
     } */
 
+ 
 
 //AULA 25 LOCAL STORAGE
 /* 
@@ -440,6 +441,133 @@ console.log(data_hoje);
 //getDay()	    Retorna o dia da semana (de 0 - Domingo a 6 - Sábado)
 //getFullYear()	Retorna o ano
 //getHours()	Retorna a hora
+
+
+//Aula 27 Métodos de tempo
+
+/*  console.log("Mensagem 1");
+
+window.setTimeout(function(){
+    console.log("Mensagem 2");
+},6000)
+
+//spinner-loader 
+//mostrar-loader
+
+document.getElementById("mostrar-loader").onclick = function(){
+
+    document.getElementById("spinner-loader").style.display = "initial";
+
+    window.setTimeout(function(){
+
+        document.getElementById("spinner-loader").style.display = "none";
+
+    },5000)
+}; 
+ */
+/* var count = 0;
+
+var inter = window.setInterval(function(){
+    console.log(count);
+    count++;
+
+    if(count == 10){
+        window.clearInterval(inter);
+    }
+},1000);  */
+/* 
+window.setInterval(function(){
+
+    var hora_atual = new Date();
+
+    var horas = hora_atual.getHours();
+    var minutos = hora_atual.getMinutes();
+    var segundos = hora_atual.getSeconds();
+    
+    function format_time(time){
+        if (time >= 0 && time <= 9){
+           var formatted_time = time.toString();
+        formatted_time = "0" + formatted_time;
+        } else{
+           var formatted_time = time.toString();
+        }
+        return formatted_time;
+    }
+
+    document.getElementById("relogio").innerHTML = format_time(horas) + ":" + format_time(minutos) + ":" + format_time(segundos);
+    
+},1000);
+ */
+
+//Aula 28 Switch 
+/* 
+function cardapio_restaurante (opcao){
+    switch(opcao){
+        case '1':
+            return "pizza";
+            break;
+
+        case '2':
+            return "tropeiro";
+            break;
+
+        case '3':
+            return "feijoada";
+            break;
+
+        case '4':
+            return "arroz doce";
+            break;
+
+        case '5':
+            return "pudim";
+            break;
+
+        default:
+            return "Opção não encontrada";
+
+    }
+}
+
+var opcao_cardapio = "2";
+
+console.log(cardapio_restaurante(opcao_cardapio));
+ */
+
+//Aula 29 Break e continue
+
+/* var valor_teste = 0;
+
+while (valor_teste < 10){
+    console.log(valor_teste);
+    valor_teste ++;
+
+    if (valor_teste == 5){
+        break;
+    }
+}
+ */
+/* var valor_teste = 0;
+
+while (valor_teste < 10){
+    valor_teste ++;
+
+    if (valor_teste % 2 == 0){
+        continue;
+    }
+    console.log(valor_teste);
+} */
+
+//Aula 30 Formulários
+/* 
+document.getElementById("mostrar_opcao").onclick = function(){
+
+}; */
+
+
+
+
+
 
 
 
