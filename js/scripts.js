@@ -639,12 +639,23 @@ for (var a = 0;  a < check.length; a++) {
 } */
 
 
-/* //AULA 35
-$("esconder").click(function(){
-    $(".exemplo").css("display","none");
+/* // Aula 34 JQuery - Sintaxe
+
+$("#esconder").click(function(){
+    $(".exemplo").hide();
 });
+ */
+
+
+ //AULA 35  Manipulção do conteúdo HTML
+/* 
 var conteudo_html = $("#paragrafo-html").html();
 console.log(conteudo_html);
+
+var url_link = $("#paragrafo-link").attr("href");
+console.log(url_link);
+
+$("#paragrafo-link").attr("href","https://www.youtube.com");
 
 var url_link = $("#paragrafo-link").attr("href");
 console.log(url_link);
@@ -654,4 +665,73 @@ $("#mudar_imagem").click(function(){
     $("#imagem_js").attr("src", "https://cdn.tutsplus.com/net/uploads/2013/12/managing-async-nodejs-retina-preview.png");
     $("#mudar_imagem").hide();
 });
- */ 
+ 
+$("#paragrafo-empty").remove(); */
+
+//Aula 36 loop each
+
+// Array
+ /* var lista = ["HTML","CSS","Javascript", "jQuery", "PHP"];
+
+$.each(lista, function( indice, valor ) {
+    console.log('O elemento de índice [' + indice + '] tem o valor de ' + valor);
+});
+
+// Objeto
+var pessoa = {
+    'nome': 'João Pedro',
+    'DN': '20/01/1990',
+    'CPF': '111.111.111-11'
+};
+
+$.each(pessoa, function( chave, valor ) {
+    console.log('O elemento de chave [' + chave + '] tem o valor de ' + valor);
+});
+
+var interesses = $("#interesses li");
+
+$.each(interesses, function( chave, valor ) {
+    console.log($(valor).text());
+}); */
+
+
+// Aula 37 Formulários
+/* 
+$("campo_nome").val();
+
+var conteudo_input = $("#campo_nome").val();
+console.log(conteudo_input);
+
+
+$("input[name='interesse']").change(function() {
+
+    var checkboxes_selecionados = $("input[name='interesse']:checked");
+    var textos = [];
+    
+    $.each(checkboxes_selecionados, function( index, value ) {
+        
+        textos.push($(value).parent("span").text());
+    
+    });
+    
+    console.log(textos);
+    
+}); */
+
+
+// Aula 38  Manipulação class
+
+// Adicionar classe:
+$("#adicionar_classe").click(function(){
+    $("#paragrafo-classes").addClass("styling");
+});
+
+// Remover classe:
+$("#remover_classe").click(function(){
+$("#paragrafo-classes").removeClass("styling");
+});
+
+// Alternar classe:
+$("#alternar_classe").click(function(){
+$("#paragrafo-classes").toggleClass("styling");
+});

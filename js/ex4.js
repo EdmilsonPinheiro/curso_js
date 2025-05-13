@@ -1,4 +1,4 @@
-
+/* 
 // Questão 1
 
 document.getElementById("estados").onchange = function(){
@@ -91,15 +91,6 @@ document.getElementById("zerar").onclick = function (){
     document.getElementById("cronometro").innerHTML = "00:00:00 000";
 }
 
-
-
-
-
-
-
-
-
-
 // Questão 4
 /* 
 var carros = [
@@ -176,4 +167,4 @@ var total_arrecadado = 0;
 for (var a = 0; a < carros.length; a++){
     total_arrecadado += valor_a_pagar (carros[a]);
 }
-document.getElementById("faturamento_total").innerHTML = total_arrecadado.toFixed(2); */
+document.getElementById("faturamento_total").innerHTML = total_arrecadado.toFixed(2); */ 
