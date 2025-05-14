@@ -1,3 +1,5 @@
+$(function(){
+
 /* //Aula 3 Variaveis
 
 var latitude = 10.45128
@@ -734,4 +736,33 @@ $("#paragrafo-classes").removeClass("styling");
 // Alternar classe:
 $("#alternar_classe").click(function(){
 $("#paragrafo-classes").toggleClass("styling");
+});
+
+
+// Aula 39 JQuery - Eventos
+
+$("#nome").keyup(function(){
+    var conteudo = $('#nome').val();
+
+    if (conteudo){
+        $('#confirmar').css("display", "initial");
+    } else {
+        $('#confirmar').css("display", "none");
+    }
+});
+
+// Aula 40 JQuery - Efeitos
+
+$("#botao-esconder").click(function(){
+    $(this).hide();
+    $("#texto-escondido").show();
+});
+
+$("#toggle-tab").click(function(){
+    $("#tab-content").slideToggle();
+    $("#toggle-tab").toggleClass("flip");
+});
+
+// Aula 41 Animate
+
 });
